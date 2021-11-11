@@ -31,11 +31,14 @@ def write_result(number, name_of_result_file):
         file.write(str(number))
 
 
-file_to_open = "number.txt"
-number_of_denominator = get_denominator(file_to_open)
-print(number_of_denominator)
-numbers_list = get_list_of_numbers(number_of_denominator)
-print(numbers_list)
-number_to_write = get_sum(numbers_list)
-print(number_to_write)
-print(write_result(number_to_write, "number_to_write"))
+if __name__ == "__main__":
+    file_to_open = "number.txt"
+    number_of_denominator = get_denominator(file_to_open)
+    print(number_of_denominator)
+    numbers_list = get_list_of_numbers(number_of_denominator)
+    print(numbers_list)
+    number_to_write = get_sum(numbers_list)
+    print(number_to_write)
+    print(write_result(number_to_write, "number_to_write"))
+
+
